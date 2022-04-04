@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import Style from './style.module.css'
 
 export default function Index(props) {
-    const { btnText='', title='Needs a Title', content='Needs content', showing } = props
+    const { btnText='', title='Needs a Title', content='Needs content', showing, className} = props
     const [isShowing, setIsShowing] = useState(showing)
 
     const modalContent = () => {
@@ -32,7 +32,7 @@ export default function Index(props) {
 
     return (
         <>
-            <span onClick={() => setIsShowing(true)}>{btnText}</span>
+            <span className={className} onClick={() => setIsShowing(true)}>{btnText}</span>
             {
                 !isShowing ?
                 <></>
