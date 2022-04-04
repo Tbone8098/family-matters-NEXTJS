@@ -1,0 +1,75 @@
+/* buttons */
+.btn {
+    padding : 0.5em 1em;
+    border-radius : 0.5em;
+    border: 0.15em solid black;
+    box-shadow: 0.15em 0.15em black;
+}
+.btn_primary {
+    background-color : #337ab7;
+    color : white;
+}
+.btn_primary:hover {
+    background-color : #286090;
+}
+.btn_success {
+    background-color : #5cb85c;
+    color : white;
+}
+.btn_success:hover {
+    background-color : #449d44;
+}
+.btn_secondary {
+    background-color : #d2d6de;
+    color : white;
+}
+.btn_secondary:hover {
+    background-color : #b9bfc6;
+}
+
+/* form elements */
+.input {
+    margin:  0.5em 0;
+    padding : 0.5em;
+    border-radius : 0.5em;
+    border: 0.15em solid black;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0.15em 0.15em black;
+}
+.txt_errs {
+    padding: 0.5em;
+    width: 100%;
+
+    border-radius: 0.5em;
+    background-color: rgb(196, 84, 84);
+    color: white;
+}
+
+/* tables */
+.table {
+    @apply flex flex-col ;
+    width: 90%;
+    text-align: center;
+}
+.table thead tr {
+    @apply bg-familyMatters-primary text-familyMatters-secondary;
+}
+.table tr {
+    @apply flex flex-wrap justify-evenly my-2 border border-black rounded-lg py-3;
+    box-shadow: 0.15em 0.15em black;
+}
+
+
+.card {
+    @apply my-2 border border-black rounded-lg py-3 flex flex-col w-10/12;
+    box-shadow: 0.15em 0.15em black;
+}
+
+/* placeholders */
+.img150 { 
+    height: 150px;
+    width: 150px;
+    background-color: gray;
+    border: 0.15em solid black;
+}
